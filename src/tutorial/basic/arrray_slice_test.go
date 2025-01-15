@@ -43,7 +43,7 @@ func TestSliceCreation(t *testing.T) {
 	fmt.Println(mysli2)
 
 	// 从切片再构造切片，或字符串构造切片
-	println(mysli2[:], "xxx"[:])
+	fmt.Println(mysli2[:], "xxx"[:])
 
 	//第二种方式：声明 var name []T
 	var _ []string
@@ -63,7 +63,8 @@ func TestSliceCompare(t *testing.T) {
 	var sli1 []int
 	fmt.Println(sli1 == nil) // true
 
-	// 判断空切片应该使用 len(s) == 0 来判断，一个nil值的切片的长度和容量都是0。但是我们不能说一个长度和容量都是0的切片一定是nil
+	// 判断空切片应该使用 len(s) == 0 来判断，一个nil值的切片的长度和容量都是0。
+	// 如果用空 slice 与 nil比较，结果为 false，会误以为这个 slice
 	var (
 		sli2 []int
 		sli3 = []int{}

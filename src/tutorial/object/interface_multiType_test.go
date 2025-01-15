@@ -6,25 +6,25 @@ import (
 	"testing"
 )
 
-//接口定义
+// 接口定义
 type Phone interface {
 	call()
 }
 
-//定义结构体
+// 定义结构体
 type Nokia struct {
 	name string
 }
 
-//结构体实现接口方法，隐式，自动实现
-//一个类型如果定义了接口的所有方法，那它就隐式地实现了该接口。
+// 结构体实现接口方法，隐式，自动实现
+// 一个类型如果定义了接口的所有方法，那它就隐式地实现了该接口。
 func (phone *Nokia) call() {
 	fmt.Println("我是Nokia打电话")
 }
 
 //--------------------------------------多态------------------------------------------
 
-//只要实现了这两个方法"就是一个商品",必须都实现
+// 只要实现了这两个方法"就是一个商品",必须都实现
 type Good interface {
 	settleAccount() int
 	orderInfo() string

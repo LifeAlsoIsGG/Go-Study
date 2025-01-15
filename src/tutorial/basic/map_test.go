@@ -18,7 +18,7 @@ func TestMapDeclare(t *testing.T) {
 
 	//第三种方法
 	scores_3 := make(map[string]int)
-	fmt.Println(scores_3)
+	fmt.Println(scores_3 == nil)
 }
 
 func TestMapMethod(t *testing.T) {

@@ -95,7 +95,7 @@ func TestExtend(t *testing.T) {
 		company:  myCom,
 	}
 
-	fmt.Printf("%s 在 %s 工作\n", staffInfo.name, staffInfo.companyName)
+	fmt.Printf("%s 在 %s 工作\n", staffInfo.name, staffInfo.companyName) // 等同于下面
 	fmt.Printf("%s 在 %s 工作\n", staffInfo.name, staffInfo.company.companyName)
 }
 
