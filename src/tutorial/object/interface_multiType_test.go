@@ -7,8 +7,15 @@ import (
 )
 
 // 接口定义
+// 接口内嵌，和结构体内嵌相似
+type InsidePhone interface {
+	call_()
+}
+
 type Phone interface {
 	call()
+	// 接口内嵌
+	InsidePhone
 }
 
 // 定义结构体

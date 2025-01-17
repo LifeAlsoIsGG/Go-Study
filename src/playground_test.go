@@ -252,8 +252,3 @@ func TestURLQueryEscape(t *testing.T) {
 	q := url.QueryEscape(strings.Join([]string{"a", "&", "c"}, " "))
 	println(q)
 }
-
-//B 10 2 12
-//BB 10 12 22
-//A 1 2 3
-//AA 1 3 4
